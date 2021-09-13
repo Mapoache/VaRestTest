@@ -1,7 +1,4 @@
 <?php
-//SIMPLE LOGIN SERVER
-//For use in production, you need to check the incoming POST data
-//See the link to this code in the video description
 header('Content-Type: application/json');
 
 if (!isset($_POST['user']) || !isset($_POST['password'])){
@@ -20,8 +17,7 @@ $data_arr = array(
 'bonus'=>false,
 'admin'=>true,
 ));
-
-if ($user == 'dani' && $password == '1234'){
+if ($user == 'daniel' && $password == '123456789'){
 $data_arr['is_authorized']=true;
 }
 
