@@ -21,7 +21,7 @@ $data_arr = array(
 'admin'=>true,
 ));
 
-if ($user == 'Dani' && $password == '1234'){
+if ($user == 'dani' && $password == '1234'){
 $data_arr['is_authorized']=true;
 }
 
