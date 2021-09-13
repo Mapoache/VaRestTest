@@ -1,13 +1,13 @@
 <?php
 header('Content-Type: application/json');
 
-if (!isset($_POST['user']) || !isset($_POST['password'])){
+if (!isset($_POST["user"]) || !isset($_POST["password"])){
 echo json_encode('User or password is not set.');
 exit;
 }
 
-$user = $_POST['user'];
-$password = $_POST['password'];
+$user = $_POST["user"];
+$password = $_POST["password"];
 
 $data_arr = array(
 'is_authorized'=>false,
@@ -17,7 +17,7 @@ $data_arr = array(
 'bonus'=>false,
 'admin'=>true,
 ));
-if ($user == 'daniel' && $password == '123456789'){
+if ($user == "daniel" && $password == "123456789"){
 $data_arr['is_authorized']=true;
 }
 
