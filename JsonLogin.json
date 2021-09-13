@@ -1,6 +1,3 @@
-<?php
-header('Content-Type: application/json');
-
 if (!isset($_POST["user"]) || !isset($_POST["password"])){
 echo json_encode('User or password is not set.');
 exit;
